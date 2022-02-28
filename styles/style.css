@@ -1,0 +1,350 @@
+/* Font Style */
+@font-face {
+    font-family: 'Aeonik Bold';
+    src: url('../typo/AeonikTRIAL-Bold.otf');
+}
+
+@font-face {
+    font-family: 'Aeonik Regular';
+    src: url('../typo/AeonikTRIAL-Regular.otf');
+}
+
+@font-face {
+    font-family: 'Hilden';
+    src: url('../typo/hilden.otf');
+}
+
+@font-face {
+    font-family: 'Fontspring';
+    src: url('../typo/Fontspring-DEMO-nekst-semibold.otf');
+}
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Aeonik Regular'
+}
+
+.bodywelcome {
+    background-image: url(../images/cliff.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    justify-content: flex-end;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    font-style: normal;
+    font-family: 'Aeonik Regluar';
+}
+
+a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+
+}
+
+.welcome__header {
+    justify-content: flex-end;
+    display: inline-block;
+    padding: 0 10px;
+}
+
+.logo__img {
+    animation: ease-in-out animat 1s;
+  }
+  @keyframes animat {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: rgba(0,0,0,.9);
+    font-size: 1.5rem;
+}
+
+.navbar navbar-expand-lg navbar-light {
+transform: scale(2);
+transition-duration: 1s;
+}
+
+
+.container {
+    display: grid;
+    grid-template-columns: 0.7fr 1.4fr 0.9fr;
+    grid-template-rows: 0.5fr 1.9fr 0.6fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "header nav nav"
+        "main main main"
+        "footer footer footer";
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.main {
+    grid-area: main;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+
+
+#gridWelcome {
+    display: grid;
+    grid-template-areas:
+        "header    section    aside"
+        "nav       section    aside"
+        "footer    section    aside";
+    grid-template-columns: 1fr, 2fr, 2fr;
+    grid-template-rows: 1fr, 5fr, 1fr;
+}
+
+header {
+    grid-area: header;
+    border: transparent 1px;
+}
+
+nav {
+    grid-area: nav;
+    border: transparent 1px;
+}
+
+aside {
+    grid-area: aside;
+    border: transparent 1px;
+}
+
+content {
+    grid-area: section;
+    border: transparent 1px;
+}
+
+footer {
+    grid-area: footer;
+    border: transparent 1px;
+}
+
+
+ul {
+    list-style: none;
+    font-size: 0;
+    display: grid;
+    justify-content: left;
+    background-color: transparent;
+}
+
+li {
+    width: 20%;
+    position: relative;
+    font-size: 22px;
+    display: inline-block;
+    justify-content: center;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 0 10px;
+}
+
+li a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Responsive Design - Tablets */
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #gridWelcome {
+        display: grid;
+        grid-template-areas:
+            "header    section    aside"
+            "nav       section    aside"
+            "footer    section    aside";
+        grid-template-columns: 1fr, 2fr, 2fr;
+        grid-template-rows: 1fr, 5fr, 1fr;
+    }
+
+    nav {
+        grid-area: nav;
+        font-family: 'Aeonik Regular';
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 1px;
+    }
+
+
+
+    ul {
+        list-style: none;
+        font-size: 0;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        align-items: right;
+        width: 100%;
+        padding: 10px;
+    }
+
+    li {
+        width: 100%;
+        position: relative;
+        font-size: 18px;
+        display: flex;
+        justify-content: right;
+        text-decoration: none;
+        color: black;
+        background-color: transparent;
+
+    }
+
+    h1 {
+        margin: 20px 15px 8px;
+        font-size: 200%;
+        background-color: rgba(0, 0, 0, 0.3);
+        border-radius: 5px;
+        width: fit-content;
+    }
+
+    #instagramIndex {
+        <img src="./images/icons/icons8-instagramwhite-64.png"alt="instagram"/>
+    }
+
+    .gallery__content {
+        margin: 0px;
+        margin-top: -10px
+    }
+}
+
+/* Responsive Design - Cellphones */
+
+@media (max-width: 480px) {
+    * {
+        padding: 0px;
+        margin: 0px;
+    }
+
+    .bodywelcome {
+        padding: 0px;
+        margin: 0px;
+        background-image: url(../images/cliff.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        justify-content: flex-end;
+        text-decoration: none;
+        font-size: 1rem;
+        font-weight: bold;
+        font-style: normal;
+        font-family: 'Aeonik Regluar';
+    }
+
+    #gridWelcome {
+        display: grid;
+        grid-template-areas:
+            "header    section    aside"
+            "nav       section    aside"
+            "footer    section    aside";
+        grid-template-columns: 1fr, 2fr, 2fr;
+        grid-template-rows: 1fr, 5fr, 1fr;
+    }
+
+    nav {
+        grid-area: nav;
+        font-family: 'Aeonik Regular';
+        font-size: 18px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0px;
+    }
+
+
+    ul {
+        list-style: none;
+        font-size: 0;
+        display: flex;
+        flex-direction: row;
+        background-color: transparent;
+        align-items: right;
+        width: 100%;
+        padding: 10px;
+
+        li {
+            width: 100%;
+            position: relative;
+            font-size: 18px;
+            display: flex;
+            justify-content: right;
+            text-decoration: none;
+            color: black;
+            background-color: none;
+        }
+
+        li a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .welcome__header {
+            grid-area: header;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            width: 100%;
+            padding: 0px;
+        }
+
+        h1 {
+            margin: 20px 15px 8px;
+            font-size: 200%;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+        .welcome__h2 {
+            margin: 8px 15px 20px;
+            font-size: 125%;
+            background-color: transparent;
+            border-radius: 5px;
+            width: fit-content;
+        }
+
+
+        #instagramIndex {
+            <img src="./images/icons/icons8-instagramwhite-64.png"alt="instagram"/>
+        }
+
+
+
+        .gallery__aside {
+            margin: 0px;
+        }
+
+        .gallery__content {
+            margin: 0px;
+            margin-top: -10px
+        }
+
+    }
+}
