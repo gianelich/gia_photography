@@ -20,6 +20,29 @@
 }
 
 
+.navbar-light .nav flex-column .nav-link.active, .navbar-light .nav flex-column .show>.nav-link {
+    color: black;
+    font-size: 1.5rem;
+   }
+
+.navbar navbar-expand-lg navbar-light {
+transform: scale(2);
+transition-duration: 1s;
+}
+
+.navbar__container{
+    font-size: 1em;
+
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+
+}
 
 * {
     margin: 0px;
@@ -27,7 +50,7 @@
     font-family: 'Aeonik Regular'
 }
 
-.bodywelcome {
+.grill__welcome {
     background-image: url(../images/cliff.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -43,12 +66,20 @@
     align-items: flex-start;
 }
 
-a {
+.nav-link {
     text-decoration: none;
     text-transform: uppercase;
     font-weight: bold;
+    color: black;
 
 }
+
+footer {
+    padding: 10px;
+    display: block;
+    background-color: transparent;
+}
+
 
 .welcome__header {
     background-color: white;
@@ -69,7 +100,20 @@ a {
 
 .logo__img {
     animation: ease-in-out animat 1s;
+    width: min-content;
 }
+
+.main
+{
+display: block;    
+}
+
+.main__events--container {
+    display: flex;
+    justify-content: center;
+
+}
+
 
 @keyframes animat {
     0% {
@@ -80,20 +124,20 @@ a {
         transform: scale(1);
     }
 
-    .navbar-light .navbar-nav .nav-link.active,
-    .navbar-light .navbar-nav .show>.nav-link {
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .show>.nav-link {
         color: rgba(0, 0, 0, .9);
         font-size: 1.5rem;
     }
 
-    .navbar navbar-expand-lg navbar-light {
+.navbar navbar-expand-lg navbar-light {
         transform: scale(2);
         transition-duration: 1s;
 
     }
 
 
-    li {
+.nav flex-column navbar__container {
         width: 20%;
         position: relative;
         font-size: 22px;
@@ -105,11 +149,11 @@ a {
         padding: 0 10px;
     }
 
-    li a {
+li a {
         text-decoration: none;
         color: black;
     }
-
+}
     /* Responsive Design - Tablets */
 
     @media (min-width: 481px) and (max-width: 767px) {
@@ -161,10 +205,11 @@ a {
 
         h1 {
             margin: 20px 15px 8px;
-            font-size: 200%;
+            font-size: 1em;
             background-color: rgba(0, 0, 0, 0.3);
             border-radius: 5px;
             width: fit-content;
+            font-family: "Aeonik Bold";
         }
 
 
@@ -269,11 +314,6 @@ a {
                 background-color: transparent;
                 border-radius: 5px;
                 width: fit-content;
-            }
-
-
-            #instagramIndex {
-                <img src="./images/icons/icons8-instagramwhite-64.png"alt="instagram"/>
             }
 
 
