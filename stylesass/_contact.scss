@@ -1,0 +1,9 @@
+.contact__img {
+    width: map-get($anchos, ancho90);
+}
+
+.contact__form {
+    border-radius: 25px;
+    width: map-get($anchos, ancho85);
+    height: map-get($altos, alto25rem);
+}

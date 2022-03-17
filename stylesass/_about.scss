@@ -1,0 +1,18 @@
+.about__img {
+    @extend .contact__img;
+    animation-name: escalar;
+    animation-duration: 10s;
+    animation-iteration-count: 3;
+}
+
+@keyframes escalar {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+        }
+}
