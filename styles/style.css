@@ -1,6 +1,7 @@
 * {
   margin: 0px;
-  padding: 0px; }
+  padding: 0px;
+}
 
 header {
   background-color: white;
@@ -8,88 +9,122 @@ header {
   align-items: start;
   flex-direction: column;
   width: min-content;
-  height: 70em; }
-  header img {
-    width: min-content; }
-  header nav ul {
-    display: flex;
-    flex-direction: column; }
-  header nav li {
-    list-style: none;
-    margin: 1em; }
-  header nav a {
-    color: black;
-    text-decoration: none; }
-    header nav a:hover {
-      background-color: #ffb900; }
+  height: 45em;
+}
+
+header img {
+  width: min-content;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: column;
+}
+
+header nav li {
+  list-style: none;
+  margin: 1em;
+}
+
+header nav a {
+  color: black;
+  text-decoration: none;
+}
+
+header nav a:hover {
+  background-color: #ffb900;
+}
 
 footer {
-  background-color: transparent; }
-  footer img {
-    animation-name: escalar;
-    animation-duration: 10s;
-    animation-iteration-count: 3; }
+  background-color: transparent;
+}
+
+footer img {
+  animation-name: escalar;
+  animation-duration: 10s;
+  animation-iteration-count: 3;
+}
 
 .about__img {
   animation-name: escalar;
   animation-duration: 10s;
-  animation-iteration-count: 3; }
+  animation-iteration-count: 3;
+}
 
 @keyframes escalar {
   0% {
-    transform: scale(1); }
-  50% {
-    transform: scale(0.95); }
-  100% {
-    transform: scale(1); } }
+    transform: scale(1);
+  }
 
-.contact__img, .about__img {
-  width: 90%; }
+  50% {
+    transform: scale(0.95);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.contact__img,
+.about__img {
+  width: 90%;
+}
 
 .contact__form {
   border-radius: 25px;
   width: 85%;
-  height: 25rem; }
+  height: 25rem;
+}
 
 /* Font Style */
 @font-face {
   font-family: 'Aeonik Bold';
-  src: url("../typo/AeonikTRIAL-Bold.otf"); }
+  src: url("../typo/AeonikTRIAL-Bold.otf");
+}
 
 @font-face {
   font-family: 'Aeonik Regular';
-  src: url("../typo/AeonikTRIAL-Regular.otf"); }
+  src: url("../typo/AeonikTRIAL-Regular.otf");
+}
 
 @font-face {
   font-family: 'Hilden';
-  src: url("../typo/hilden.otf"); }
+  src: url("../typo/hilden.otf");
+}
 
 @font-face {
   font-family: 'Fontspring';
-  src: url("../typo/Fontspring-DEMO-nekst-semibold.otf"); }
+  src: url("../typo/Fontspring-DEMO-nekst-semibold.otf");
+}
 
-.navbar-light .nav flex-column .nav-link.active, .navbar-light .nav flex-column .show > .nav-link {
+.navbar-light .nav flex-column .nav-link.active,
+.navbar-light .nav flex-column .show>.nav-link {
   color: black;
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .navbar navbar-expand-lg navbar-light {
   transform: scale(2);
-  transition-duration: 1s; }
+  transition-duration: 1s;
+}
 
 .navbar__container {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 .navbar-nav {
   display: flex;
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none;
+}
 
 * {
   margin: 0px;
   padding: 0px;
-  font-family: 'Aeonik Regular'; }
+  font-family: 'Aeonik Regular';
+}
 
 .grill__welcome {
   background-image: url(../images/cliff.jpg);
@@ -103,18 +138,21 @@ footer {
   font-weight: bold;
   font-style: normal;
   font-family: 'Aeonik Regluar';
-  align-items: flex-start; }
+  align-items: flex-start;
+}
 
 .nav-link {
   text-decoration: none;
   text-transform: uppercase;
   font-weight: bold;
-  color: black; }
+  color: black;
+}
 
 footer {
   padding: 10px;
   display: block;
-  background-color: transparent; }
+  background-color: transparent;
+}
 
 .welcome__header {
   background-color: white;
@@ -130,31 +168,43 @@ footer {
   margin-top: -275px;
   text-align: left;
   align-items: flex-start;
-  width: min-content; }
+  width: min-content;
+}
 
 .logo__img {
   animation: ease-in-out animat 1s;
-  width: min-content; }
+  width: min-content;
+}
 
 .main {
-  display: block; }
+  display: block;
+}
 
 .main__events--container {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+}
 
 @keyframes animat {
   0% {
-    transform: scale(0); }
+    transform: scale(0);
+  }
+
   100% {
-    transform: scale(1); }
+    transform: scale(1);
+  }
+
   .navbar-light .navbar-nav .nav-link.active,
-  .navbar-light .navbar-nav .show > .nav-link {
+  .navbar-light .navbar-nav .show>.nav-link {
     color: rgba(0, 0, 0, 0.9);
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+  }
+
   .navbar navbar-expand-lg navbar-light {
     transform: scale(2);
-    transition-duration: 1s; }
+    transition-duration: 1s;
+  }
+
   .nav flex-column navbar__container {
     width: 20%;
     position: relative;
@@ -164,95 +214,224 @@ footer {
     text-decoration: none;
     color: black;
     background-color: white;
-    padding: 0 10px; }
+    padding: 0 10px;
+  }
+
   li a {
     text-decoration: none;
-    color: black; } }
-
-/* Responsive Design - Tablets */
-@media (min-width: 481px) and (max-width: 767px) {
-  #gridWelcome {
-    display: grid;
-    grid-template-areas: "header    section    aside" "nav       section    aside" "footer    section    aside";
-    grid-template-columns: 1fr, 2fr, 2fr;
-    grid-template-rows: 1fr, 5fr, 1fr; }
-  nav {
-    grid-area: nav;
-    font-family: 'Aeonik Regular';
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 1px; }
-  ul {
-    list-style: none;
-    font-size: 0;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    align-items: right;
-    width: 100%;
-    padding: 10px; }
-  li {
-    width: 100%;
-    position: relative;
-    font-size: 18px;
-    display: flex;
-    justify-content: right;
-    text-decoration: none;
     color: black;
-    background-color: transparent; }
-  h1 {
-    margin: 20px 15px 8px;
-    font-size: 1em;
-    background-color: rgba(0, 0, 0, 0.3);
-    border-radius: 5px;
-    width: fit-content;
-    font-family: "Aeonik Bold"; }
-  .gallery__content {
-    margin: 0px;
-    margin-top: -10px; } }
+  }
+}
 
-/* Responsive Design - Cellphones */
-@media (max-width: 480px) {
-  * {
-    padding: 0px;
-    margin: 0px; }
-  .bodywelcome {
-    padding: 0px;
-    margin: 0px;
-    background-image: url(../images/cliff.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    justify-content: flex-end;
-    text-decoration: none;
-    font-size: 1rem;
-    font-weight: bold;
-    font-style: normal;
-    font-family: 'Aeonik Regluar'; }
-  #gridWelcome {
-    display: grid;
-    grid-template-areas: "header    section    aside" "nav       section    aside" "footer    section    aside";
-    grid-template-columns: 1fr, 2fr, 2fr;
-    grid-template-rows: 1fr, 5fr, 1fr; }
-  nav {
-    grid-area: nav;
-    font-family: 'Aeonik Regular';
-    font-size: 18px;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    padding: 0px; }
-  ul {
-    list-style: none;
-    font-size: 0;
-    display: flex;
-    flex-direction: row;
-    background-color: transparent;
-    align-items: right;
-    width: 100%;
-    padding: 10px; }
+.galery-card {
+  padding-top: 20px;
+}
+
+.galery-card .row .col {
+  padding-top: 20px;
+}
+
+.galery-card .row .col img {
+  transition: 0.3s ease all;
+}
+
+.galery-card .row .col img:hover {
+  transform: scale(1.07);
+}
+
+.galery-card__galery-img {
+  cursor: pointer;
+}
+
+.modal-body {
+  background-color: #191818;
+  border: 2px solid #232323;
+}
+
+.full-image {
+  width: 100%;
+}
+
+.close-modal {
+  position: absolute;
+  right: 25px;
+  top: 25px;
+  font-size: 20px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+
+.close-modal:hover {
+  opacity: 1;
+}
+
+.gallery__container {
+  padding-top: 64px;
+}
+
+.galery-card {
+  padding-top: 20px;
+}
+
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto; }
+
+  .fade:not(.show) {
+    opacity: 0;
+  }
+
+  .fade {
+    transition: opacity .15s linear;
+  }
+  @media (min-width: 1200px)
+  .row-cols-xl-5>* {
+      -ms-flex: 0 0 20%;
+      flex: 0 0 20%;
+      max-width: 20%;
+  }
+  
+  @media (min-width: 768px)
+  .row-cols-md-4>* {
+      -ms-flex: 0 0 25%;
+      flex: 0 0 25%;
+      max-width: 25%;
+  }
+  @media (min-width: 576px)
+  .row-cols-sm-2>* {
+      -ms-flex: 0 0 50%;
+      flex: 0 0 50%;
+      max-width: 50%;
+  }
+  .row-cols-1>* {
+      -ms-flex: 0 0 100%;
+      flex: 0 0 100%;
+      max-width: 100%;
+  }
+  .col {
+      -ms-flex-preferred-size: 0;
+      flex-basis: 0;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      max-width: 100%;}
+      
+  /* Responsive Design - Tablets */
+  @media (min-width: 481px) and (max-width: 767px) {
+    #gridWelcome {
+      display: grid;
+      grid-template-areas: "header    section    aside"
+        "nav       section    aside"
+        "footer    section    aside";
+      grid-template-columns: 1fr, 2fr, 2fr;
+      grid-template-rows: 1fr, 5fr, 1fr;
+    }
+
+    nav {
+      grid-area: nav;
+      font-family: 'Aeonik Regular';
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 1px;
+    }
+
+    ul {
+      list-style: none;
+      font-size: 0;
+      display: flex;
+      flex-direction: row;
+      background-color: transparent;
+      align-items: right;
+      width: 100%;
+      padding: 10px;
+    }
+
+    li {
+      width: 100%;
+      position: relative;
+      font-size: 18px;
+      display: flex;
+      justify-content: right;
+      text-decoration: none;
+      color: black;
+      background-color: transparent;
+    }
+
+    h1 {
+      margin: 20px 15px 8px;
+      font-size: 1em;
+      background-color: rgba(0, 0, 0, 0.3);
+      border-radius: 5px;
+      width: fit-content;
+      font-family: "Aeonik Bold";
+    }
+
+    .gallery__content {
+      margin: 0px;
+      margin-top: -10px;
+    }
+  }
+
+  /* Responsive Design - Cellphones */
+  @media (max-width: 480px) {
+    * {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    .bodywelcome {
+      padding: 0px;
+      margin: 0px;
+      background-image: url(../images/cliff.jpg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      justify-content: flex-end;
+      text-decoration: none;
+      font-size: 1rem;
+      font-weight: bold;
+      font-style: normal;
+      font-family: 'Aeonik Regluar';
+    }
+
+    #gridWelcome {
+      display: grid;
+      grid-template-areas: "header    section    aside"
+        "nav       section    aside"
+        "footer    section    aside";
+      grid-template-columns: 1fr, 2fr, 2fr;
+      grid-template-rows: 1fr, 5fr, 1fr;
+    }
+
+    nav {
+      grid-area: nav;
+      font-family: 'Aeonik Regular';
+      font-size: 18px;
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      padding: 0px;
+    }
+
+    ul {
+      list-style: none;
+      font-size: 0;
+      display: flex;
+      flex-direction: row;
+      background-color: transparent;
+      align-items: right;
+      width: 100%;
+      padding: 10px;
+    }
+
     ul li {
       width: 100%;
       position: relative;
@@ -261,10 +440,14 @@ footer {
       justify-content: right;
       text-decoration: none;
       color: black;
-      background-color: none; }
+      background-color: none;
+    }
+
     ul li a {
       text-decoration: none;
-      color: black; }
+      color: black;
+    }
+
     ul .welcome__header {
       grid-area: header;
       color: white;
@@ -272,21 +455,31 @@ footer {
       flex-direction: column;
       justify-content: space-around;
       width: 100%;
-      padding: 0px; }
+      padding: 0px;
+    }
+
     ul h1 {
       margin: 20px 15px 8px;
       font-size: 200%;
       background-color: rgba(0, 0, 0, 0.3);
       border-radius: 5px;
-      width: fit-content; }
+      width: fit-content;
+    }
+
     ul .welcome__h2 {
       margin: 8px 15px 20px;
       font-size: 125%;
       background-color: transparent;
       border-radius: 5px;
-      width: fit-content; }
+      width: fit-content;
+    }
+
     ul .gallery__aside {
-      margin: 0px; }
+      margin: 0px;
+    }
+
     ul .gallery__content {
       margin: 0px;
-      margin-top: -10px; } }
+      margin-top: -10px;
+    }
+  }
