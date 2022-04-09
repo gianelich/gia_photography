@@ -1,86 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Bootstrap Mobile Responsiveness -->
-    <!-- SEO -->
-    <meta name="description" content="Argentina based photographer. Lover of capturing instant moments that gives you something to remember it by. Come and see the world through my eyes.">
-    <meta name="keywords"  content="Images, Camera, Nature, Outdoors, Adventure, Street, Photography, Low-budget">
-    <!-- CSS Bootstrap -->
-    <link rel="shortcut icon" href="./images/icons/icons8-camera-60 (1).png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Gianella Licheni</title>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <!-- Bootstrap Mobile Responsiveness -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- SEO -->
+  <meta name="description"
+    content="Argentina based photographer. Lover of capturing instant moments that gives you something to remember it by. Come and see the world through my eyes.">
+  <meta name="keywords" content="Images, Camera, Nature, Outdoors, Adventure, streetphotography, Photography, Low-budget">
+  <!-- CSS Bootstrap -->
+  <link rel="shortcut icon" href="./images/icons/icons8-camera-60 (1).png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="../styles/style.css">
+  <title>Gianella Licheni</title>
 </head>
 
+
 <body>
+ <!-- Navigation Bar -->
   <header>
-    <nav class="navbar navbar-expand-lg navbar-light">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="../index.html"><img class="logo__img" src="../images/Logo/GIA PLAIN BLACK.png"></a>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
-          aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="nav flex-column ms-0">
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html">Welcome</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./gallery.html">Gallery</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./about.html">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./latest.html">Latest</a>
-            </li>
-          </ul>
-        </div>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <h1>Check out the latest photoshoot for Donata beer garden!</h1>
-  <section class="main__events">
-    <div class="row  row-cols-sm-1 row-cols-md-1 row-cols-lg-2">
-      <div data="fade-right" class="main__events--container"><img class="main__events--img"
-          src="../images/_CAR1097.jpg"></div>
-      <div data="fade-left" class="main__events--container"><img class="main__events--img"
-          src="../images/DSC_0897.jpg"></div>
-      <div data="fade-left" data-aos="fade-right" class="main__events--container"><img class="main__events--img"
-          src="../images/DSC_0898.jpg"></div>
-      <div data="fade-left" class="main__events--container"><img class="main__events--img"
-          src="../images/DSC_0902.jpg"></div>
-      <div data="fade-right" class="main__events--container"><img class="main__events--img"
-          src="../images/DSC_0915.jpg"></div>
-      <div data="fade-left" class="main__events--container"><img class="main__events--img"
-          src="../images/DSC_0930.jpg"></div>
-      <div data="fade-right" class="main__events--container"><img class="main__events--img"
-          src="../images/DSC_0946.jpg"></div>
-      <div data="fade-left" class="main__events--container"><img class="main__events--img"
-          src="../images/DSC_1116.jpg"></div>
+    <div class="container--logo">
+      <img src="../images/Logo/GIA este (1).png" alt="logo_gia" class="logo">
     </div>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Welcome</a></li>
+        <li><a href="../sections/gallery.html">Gallery</a></li>
+        <li><a href="../sections/latest.html">Latest</a></li>
+        <li><a href="../sections/about.html">About</a></li>
+        <li><a href="../sections/contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header> 
 
-  </section>
-</div>
+<section class="latest__title">
+  <h2> Check out the latest photoshoot for Donata beer garden! </h2>
+</section>
+
+<!-- Bootstrap Carousel -->
+<section class="carousel">
+        <div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img src="../images/carousel/carousel_1.jpg" class="d-block w-50" alt="donata">
+                </div>
+                <div class="carousel-item active">
+                  <img src="../images/carousel/carousel_2.jpg" class="d-block w-100" alt="donata">
+                </div>
+                <div class="carousel-item active">
+                  <img src="../images/carousel/carousel_3.jpg" class="d-block w-100" alt="donata">
+                </div>
+                <div class="carousel-item active">
+                  <img src="../images/carousel/carousel_4.jpg" class="d-block w-100" alt="donata">
+                </div>
+                <div class="carousel-item active">
+                  <img src="../images/carousel/carousel_5.jpg" class="d-block w-100" alt="donata">
+                </div>
+                <div class="carousel-item active">
+                  <img src="../images/carousel/carousel_6.jpg" class="d-block w-100" alt="donata">
+                </div>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+</section>
 
 <!-- Footer -->
-<footer class="footer">
-  <img src="../images/icons/icons8-instagramwhite-64.png" alt="instagram" />
-</footer>
+<footer>
+  <div class="footer--left">
+    <ul class="ul--footer">
+      <li> <a href="https://www.instagram.com/gianelich/">
+        <img src="../images/icons/animated instagram.gif" alt="instagram-icon" class="footer__icon footer__icon--instagram"></a></li>
+      <li> <a href="mailto: licheni91@gmail.com">
+        <img src="../images/icons/icons8-emailwhite-64.png" alt="email-icon" class="footer__icon footer__icon--email"></a></li>
+      <li> <a href="https://500px.com/p/licheni91?view=photos">
+        <img src="../images/icons/icons8-500px-64 (1).png" alt="500-icon" class="footer__icon footer__icon--500"></a></li>
+      <li> <a href="https://www.behance.net/licheni91b3aa">
+        <img src="../images/icons/icons8-behance-64.png" alt="behance-icon" class="footer__icon footer__icon--behance"></a></li>      
+    </ul>
+  </div>
+
+ 
+
+  </footer>
+
+<style>
+.footer,
+.generic-footer {
+  margin-bottom: 98px
+}
+@media (min-width:374px) {
+  .footer,
+  .generic-footer {
+    margin-bottom: 78px
+  }
+}
+@media (min-width:546px) {
+  .footer,
+  .generic-footer {
+    margin-bottom: 56px
+  }
+}
+@media (min-width:1055px) {
+  .footer,
+  .generic-footer {
+    margin-bottom: 0
+  }
+}
+</style>
 
 <!-- JS Bootstrap -->
-<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
-
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
+  integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"
+  integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
 </body>
 </html>
