@@ -6,8 +6,7 @@ header {
   grid-area: header;
   display: grid;
   background: white;
-  grid-template-areas: "logo"
- "nav"; }
+  grid-template-areas: "logo" "nav"; }
   header nav {
     grid-area: nav; }
   header ul {
@@ -178,9 +177,7 @@ footer {
 @media (min-width: 481px) and (max-width: 767px) {
   #gridWelcome {
     display: grid;
-    grid-template-areas: "header    section    aside"
- "nav       section    aside"
- "footer    section    aside";
+    grid-template-areas: "header    section    aside" "nav       section    aside" "footer    section    aside";
     grid-template-columns: 1fr, 2fr, 2fr;
     grid-template-rows: 1fr, 5fr, 1fr; }
   nav {
@@ -240,9 +237,7 @@ footer {
     font-family: 'Aeonik Regluar'; }
   #gridWelcome {
     display: grid;
-    grid-template-areas: "header    section    aside"
- "nav       section    aside"
- "footer    section    aside";
+    grid-template-areas: "header    section    aside" "nav       section    aside" "footer    section    aside";
     grid-template-columns: 1fr, 2fr, 2fr;
     grid-template-rows: 1fr, 5fr, 1fr; }
   nav {

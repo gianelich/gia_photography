@@ -1,0 +1,10 @@
+footer {
+    background-color: $primary-color;
+    
+    img {
+        animation-name: escalar;
+        animation-duration: 10s;
+        animation-iteration-count: 3;
+    }
+
+}
