@@ -5,6 +5,7 @@
 @import './about';
 @import './contact';
 @import './variables';
+@import './oldcss.scss';
 
 
 /* Font Style */
@@ -28,7 +29,21 @@
     src: url('../typo/Fontspring-DEMO-nekst-semibold.otf');
 }
 
+@font-face {
+    font-family: 'Printvetica';
+    src: url("../typo/Printvetica.otf");
+}
 
+@font-face {
+    font-family: 'BlackMango';
+    src: url("../typo/black-mango-regular.ttf");
+}  
+
+@font-face {
+    font-family: 'Grifito';
+    src: url("../typo/GrifitoTesteM-MediumItalic.otf");
+  }
+  
 .navbar-light .nav flex-column .nav-link.active, .navbar-light .nav flex-column .show>.nav-link {
     color: black;
     font-size: 1.5rem;

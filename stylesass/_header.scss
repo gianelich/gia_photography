@@ -2,7 +2,8 @@ header {
     grid-area: header;
     display: grid;
     background: $primary-color;
-    grid-template-areas: "logo"
+    grid-template-areas: 
+    "logo" 
     "nav";
 
     nav {
@@ -17,26 +18,26 @@ header {
         li {
         list-style: none;
         align-items: center;
-        padding: 0 0.2em;
+        padding: -0em 1em;
         }
-        &:hover {
-        transform: scale(1.2);
-        }
+            &:hover {
+            transform: scale(1.2);
+            }
   
         a {
         text-decoration: none;
         color: $secondary-color;
+        font-family: 'Printvetica';
         }
   
-    .container--logo {
+.container--logo {
     grid-area: logo;
     display: flex;
     justify-content: center;
     }
-        .logo {
-        width: 3em;
-        filter: invert(100%);
-        }
+    .logo {
+    width: 3em;
+    }
   
         .logo:hover {
         filter: invert(100%);
