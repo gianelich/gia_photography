@@ -28,7 +28,7 @@ header {
     justify-content: center; }
   header .logo {
     width: 3em;
-    filter: invert(0%); }
+    filter: invert(100%); }
   header .logo:hover {
     filter: invert(100%); }
 
