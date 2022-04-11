@@ -5,11 +5,11 @@ header {
     grid-template-areas: 
     "logo" 
     "nav";
-
+}
     nav {
     grid-area: nav;
-    }
-        ul {
+    
+    ul {
         display: flex;
         flex-direction:row;
         align-items: center;
@@ -18,10 +18,9 @@ header {
         li {
         list-style: none;
         align-items: center;
-        padding: -0em 1em;
-        }
+        padding: 0em 0.2em;}
             &:hover {
-            transform: scale(1.2);
+            transform: scale(1);
             }
   
         a {
@@ -29,6 +28,7 @@ header {
         color: $secondary-color;
         font-family: 'Printvetica';
         }
+    }    
   
 .container--logo {
     grid-area: logo;
@@ -37,9 +37,8 @@ header {
     }
     .logo {
     width: 3em;
-    }
-  
-        .logo:hover {
+    &:hover {
         filter: invert(100%);
         }
-}  
+    }
+  

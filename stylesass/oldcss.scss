@@ -10,14 +10,10 @@
   }
   
   @font-face {
-    font-family: 'Grifito';
-    src: url("../typo/GrifitoTesteM-MediumItalic.otf");
+    font-family: 'Basquiat';
+    src: url("../typo/Basquiat.otf");
   }
   
-  @font-face {
-    font-family: 'Fontspring';
-    src: url("../typo/Fontspring-DEMO-nekst-semibold.otf");
-  }
 
   @font-face {
     font-family: 'Printvetica';
@@ -319,42 +315,18 @@
   /* LATEST */
   
   .latest__title h2 {
-    font-family: "Aeonik Regular", sans-serif;
+    font-family: "Aeonik Regular";
     font-size: 1em;
-    font-weight: 100;
+    font-weight: 300;
     font-style: normal;
-    color: #0e0e0e;
+    color: $secondary-color;
     margin-left: 3%;
     margin-top: 5%;
     margin-bottom: 1%;
   }
   
   /* Bootstrap Carousel */
-
-  .carousel-item {
-    height: 50rem;
-    position: relative;
-    background-position: center;
-    background-size: cover; }
-    
-  .carousel__img1 {
-    background-image: url("../images/carousel/carousel_1.jpg"); }
-  
-  .carousel__img2 {
-    background-image: url("../images/carousel/carousel_2.jpg"); }
-  
-  .carousel__img3 {
-    background-image: url("../images/carousel/carousel_3.jpg"); }
-
-  .carousel__img4 {
-    background-image: url("../images/carousel/carousel_4.jpg"); }
-  
-  .carousel__img5 {
-    background-image: url("../images/carousel/carousel_5.jpg"); }
-  
-  .carousel__img6 {
-    background-image: url("../images/carousel/carousel_6.jpg"); }  
-  
+ 
   .carousel__img1,
   .carousel__img2,
   .carousel__img3,
@@ -363,8 +335,6 @@
   .carousel__img6 {
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat;
-    background-size: cover;
     }
   
   /* ABOUT */
@@ -403,10 +373,16 @@
   
  
   #about .about-extra h4 {
+    font-family: 'Basquiat';
     font-weight:600;
-    font-size: 25px;
-    color:#0a0a0a;
+    font-size: 50px;
+    color:$secondary-color;
   }
+
+.aboutquote {
+font-family: 'Printvetica';
+font-weight: lighter;
+}  
   
   /* CONTACT */
   .contact__img, .contact__img {
@@ -417,7 +393,21 @@
     width: 85%;
     height: 25rem; }
   
-  
+.text-center {
+font-family: 'Basquiat';
+font-size: 70px;
+font-weight: 300;
+}
+
+.fs-4 {
+font-size: small;
+}
+
+.fs-6 {
+font-size: small;
+font-style: italic;
+}
+
   /*RESPONSIVE GRID AREAS*/
   
   /*TABLET VIEW*/
@@ -561,3 +551,5 @@
       display: flex;
     }
   }
+
+  

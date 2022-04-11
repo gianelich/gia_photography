@@ -41,45 +41,45 @@
 </section>
 
 <!-- Bootstrap Carousel -->
-<div id="myCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-sr-id="2" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.5s;">
-  <div class="carousel" data-sr-id="3" style="visibility: visible; opacity: 1; transition: opacity 0.6s cubic-bezier(0.5, 0, 0, 1) 0.5s;">
-    <ol class="carousel-indicators">
-      <li data-bs-target="#myCarousel" data-bs-slide-to="0" class=""></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="1" class=""></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="2" class=""></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="3" class=""></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="4" class=""></li>
-      <li data-bs-target="#myCarousel" data-bs-slide-to="5" class="active" aria-current="true"></li>
-    </ol>
-    <div class="carousel-inner">
-      <div class="carousel-item">
-        <div class="carousel__img1"></div>
+<div class="container d-flex justify-content-center carousel__latest">
+  <div class="carousel slide carousel-fade w-100" id="carousel-01" data-bs-ride="carousel">
+      <div class="carousel-inner">
+          <!-- Slide 1 -->
+          <div class="carousel-item active" data-interval="400">
+              <img src="../images/carousel/carousel_1.jpg" alt="microphone" class="d-block w-100" />
+          </div>
+          <!-- Slide 2 -->
+          <div class="carousel-item" data-interval="400">
+              <img src="../images/carousel/carousel_2.jpg" alt="beer" class="d-block w-100" />
+          </div>
+          <!-- Slide 3 -->
+          <div class="carousel-item" data-interval="400">
+              <img src="../images/carousel/carousel_3.jpg" alt="saintpatricksday" class="d-block w-100" />
+          </div>
+          <!-- Slide 4 -->
+          <div class="carousel-item" data-interval="400">
+              <img src="../images/sarousel/carousel_4.jpg" alt="bar" class="d-block w-100" />
+          </div>
+          <!-- Slide 5 -->
+          <div class="carousel-item" data-interval="400">
+              <img src="../images/carousel/carousel_5.jpg" alt="beergarden" class="d-block w-100" />
+          </div>
+          <!-- Slide 6 -->
+          <div class="carousel-item" data-interval="400">
+              <img src="../images/carousel/carousel_6.jpg" alt="greenbeer" class="d-block w-100" />
+          </div>
       </div>
-      <div class="carousel-item">
-        <div class="carousel__img2"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel__img3"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel__img4"></div>
-      </div>
-      <div class="carousel-item">
-        <div class="carousel__img5"></div>
-      </div>
-      <div class="carousel-item active">
-        <div class="carousel__img6"></div>
-      </div>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#myCarousel" role="button" data-bs-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Anterior</span>
-  </a>
-  <a class="carousel-control-next" href="#myCarousel" role="button" data-bs-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="visually-hidden">Próximo</span>
-  </a>
+
+       <!-- Controls -->
+       <button class="carousel-control-prev" type="button" data-bs-target="#carousel-01" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carousel-01" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+</div>
 </div>
 
 <!-- Footer -->

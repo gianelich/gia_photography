@@ -7,29 +7,32 @@ header {
   display: grid;
   background: white;
   grid-template-areas: "logo"  "nav"; }
-  header nav {
-    grid-area: nav; }
-  header ul {
+
+nav {
+  grid-area: nav; }
+  nav ul {
     display: flex;
     flex-direction: row;
     align-items: center; }
-  header li {
+  nav li {
     list-style: none;
     align-items: center;
-    padding: -0em 1em; }
-  header:hover {
-    transform: scale(1.2); }
-  header a {
+    padding: 0em 0.2em; }
+  nav:hover {
+    transform: scale(1); }
+  nav a {
     text-decoration: none;
     color: black;
     font-family: 'Printvetica'; }
-  header .container--logo {
-    grid-area: logo;
-    display: flex;
-    justify-content: center; }
-  header .logo {
-    width: 3em; }
-  header .logo:hover {
+
+.container--logo {
+  grid-area: logo;
+  display: flex;
+  justify-content: center; }
+
+.logo {
+  width: 3em; }
+  .logo:hover {
     filter: invert(100%); }
 
 footer {
@@ -70,12 +73,8 @@ footer {
   src: url("../typo/AeonikTRIAL-Regular.otf"); }
 
 @font-face {
-  font-family: 'Grifito';
-  src: url("../typo/GrifitoTesteM-MediumItalic.otf"); }
-
-@font-face {
-  font-family: 'Fontspring';
-  src: url("../typo/Fontspring-DEMO-nekst-semibold.otf"); }
+  font-family: 'Basquiat';
+  src: url("../typo/Basquiat.otf"); }
 
 @font-face {
   font-family: 'Printvetica';
@@ -324,40 +323,16 @@ footer .ul--footer .footer__icon {
 
 /* LATEST */
 .latest__title h2 {
-  font-family: "Aeonik Regular", sans-serif;
+  font-family: "Aeonik Regular";
   font-size: 1em;
-  font-weight: 100;
+  font-weight: 300;
   font-style: normal;
-  color: #0e0e0e;
+  color: black;
   margin-left: 3%;
   margin-top: 5%;
   margin-bottom: 1%; }
 
 /* Bootstrap Carousel */
-.carousel-item {
-  height: 50rem;
-  position: relative;
-  background-position: center;
-  background-size: cover; }
-
-.carousel__img1 {
-  background-image: url("../images/carousel/carousel_1.jpg"); }
-
-.carousel__img2 {
-  background-image: url("../images/carousel/carousel_2.jpg"); }
-
-.carousel__img3 {
-  background-image: url("../images/carousel/carousel_3.jpg"); }
-
-.carousel__img4 {
-  background-image: url("../images/carousel/carousel_4.jpg"); }
-
-.carousel__img5 {
-  background-image: url("../images/carousel/carousel_5.jpg"); }
-
-.carousel__img6 {
-  background-image: url("../images/carousel/carousel_6.jpg"); }
-
 .carousel__img1,
 .carousel__img2,
 .carousel__img3,
@@ -365,9 +340,7 @@ footer .ul--footer .footer__icon {
 .carousel__img5,
 .carousel__img6 {
   height: 100%;
-  width: 100%;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  width: 100%; }
 
 /* ABOUT */
 #about {
@@ -397,9 +370,14 @@ footer .ul--footer .footer__icon {
   padding: 0 0 30px 0; }
 
 #about .about-extra h4 {
+  font-family: 'Basquiat';
   font-weight: 600;
-  font-size: 25px;
-  color: #0a0a0a; }
+  font-size: 50px;
+  color: black; }
+
+.aboutquote {
+  font-family: 'Printvetica';
+  font-weight: lighter; }
 
 /* CONTACT */
 .contact__img, .img-fluid, .contact__img, .img-fluid {
@@ -409,6 +387,18 @@ footer .ul--footer .footer__icon {
   border-radius: 25px;
   width: 85%;
   height: 25rem; }
+
+.text-center {
+  font-family: 'Basquiat';
+  font-size: 70px;
+  font-weight: 300; }
+
+.fs-4 {
+  font-size: small; }
+
+.fs-6 {
+  font-size: small;
+  font-style: italic; }
 
 /*RESPONSIVE GRID AREAS*/
 /*TABLET VIEW*/
